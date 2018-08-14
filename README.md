@@ -1,6 +1,10 @@
 # area-data
 中国行政区域数据(含港澳台)
 
+## v5.1
+
+* 修复三级市辖市丢失问题
+
 ## v5
 * 更改新的数据来源：[area-puppeteer](https://github.com/dwqs/area-puppeteer)
 * 在实用性上对数据作了格式化处理，见[area-puppeteer#format.js](https://github.com/dwqs/area-puppeteer/blob/master/format.js#L16)
@@ -21,31 +25,25 @@ v1版本中，`data.js` 包含省市区以及街道数据。
 Install the pkg with npm:
 
 ```
-npm install area-data --save
+npm install @lynzz/area-data --save
 ```
 
 or yarn
 
 ```
-yarn add area-data
-```
-
-or bower
-
-```
-bower install area-data
+yarn add @lynzz/area-data
 ```
 
 ## 获取数据
 ```
 // v5之前的版本
-import AreaData from 'area-data';
+import AreaData from '@lynzz/area-data';
 
 // v5及之后的版本
-import { pca, pcaa } from 'area-data';
+import { pca, pcaa } from '@lynzz/area-data';
 // 可以根据需要按需引入：
-import PCA from 'area-data/pca'; 
-import PCAA from 'area-data/pcaa'; 
+import PCA from '@lynzz/area-data/pca'; 
+import PCAA from '@lynzz/area-data/pcaa'; 
 
 pca['86'] // 等同于 AreaData['86']
 // 所有省份：{'110000': '北京市', '120000': '天津市', '130000': '河北省', ...}
