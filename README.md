@@ -25,25 +25,25 @@ v1版本中，`data.js` 包含省市区以及街道数据。
 Install the pkg with npm:
 
 ```
-npm install @lynzz/area-data --save
+npm install @waye/area-data --save
 ```
 
 or yarn
 
 ```
-yarn add @lynzz/area-data
+yarn add @waye/area-data
 ```
 
 ## 获取数据
 ```
 // v5之前的版本
-import AreaData from '@lynzz/area-data';
+import AreaData from '@waye/area-data';
 
 // v5及之后的版本
-import { pca, pcaa } from '@lynzz/area-data';
+import { pca, pcaa } from '@waye/area-data';
 // 可以根据需要按需引入：
-import PCA from '@lynzz/area-data/pca'; 
-import PCAA from '@lynzz/area-data/pcaa'; 
+import PCA from '@waye/area-data/pca'; 
+import PCAA from '@waye/area-data/pcaa'; 
 
 pca['86'] // 等同于 AreaData['86']
 // 所有省份：{'110000': '北京市', '120000': '天津市', '130000': '河北省', ...}
